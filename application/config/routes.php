@@ -49,6 +49,86 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'auth/showLogin';
+
+// Registration
+$route['register']              = 'auth/showRegister';        // GET
+$route['register/submit']       = 'auth/register';            // POST
+
+// Email Verification
+$route['verify-email']          = 'auth/verifyEmail';         // GET with ?token=
+$route['resend-verification']   = 'auth/resendVerification';  // POST
+
+// Login / Logout
+$route['login']                 = 'auth/showLogin';           // GET
+$route['login/submit']          = 'auth/login';               // POST
+$route['logout']                = 'auth/logout';              // GET
+
+// Password Reset
+$route['forgot-password']       = 'auth/showForgotPassword';  // GET
+$route['forgot-password/submit']= 'auth/forgotPassword';      // POST
+$route['reset-password']        = 'auth/showResetPassword';   // GET with ?token=
+$route['reset-password/submit'] = 'auth/resetPassword';       // POST
+
+// Protected pages
+$route['dashboard']             = 'dashboard/index';
+
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+
+// ================================================================
+// Profile Routes (all require login - enforced in controller)
+// ================================================================
+
+// Profile dashboard
+$route['profile']                       = 'profile/index';
+
+// Personal info
+$route['profile/personal']              = 'profile/personal';
+$route['profile/personal/save']         = 'profile/personal_save';
+
+// Profile image
+$route['profile/image']                 = 'profile/image';
+$route['profile/image/upload']          = 'profile/image_upload';
+
+// Degrees
+$route['profile/degrees']               = 'profile/degrees';
+$route['profile/degree/add']            = 'profile/degree_add';
+$route['profile/degree/edit/(:num)']    = 'profile/degree_edit/$1';
+$route['profile/degree/save']           = 'profile/degree_save';
+$route['profile/degree/delete/(:num)']  = 'profile/degree_delete/$1';
+
+// Certifications
+$route['profile/certifications']               = 'profile/certifications';
+$route['profile/certification/add']            = 'profile/certification_add';
+$route['profile/certification/edit/(:num)']    = 'profile/certification_edit/$1';
+$route['profile/certification/save']           = 'profile/certification_save';
+$route['profile/certification/delete/(:num)']  = 'profile/certification_delete/$1';
+
+// Licences
+$route['profile/licences']               = 'profile/licences';
+$route['profile/licence/add']            = 'profile/licence_add';
+$route['profile/licence/edit/(:num)']    = 'profile/licence_edit/$1';
+$route['profile/licence/save']           = 'profile/licence_save';
+$route['profile/licence/delete/(:num)']  = 'profile/licence_delete/$1';
+
+// Professional Courses
+$route['profile/courses']               = 'profile/courses';
+$route['profile/course/add']            = 'profile/course_add';
+$route['profile/course/edit/(:num)']    = 'profile/course_edit/$1';
+$route['profile/course/save']           = 'profile/course_save';
+$route['profile/course/delete/(:num)']  = 'profile/course_delete/$1';
+
+// Employment
+$route['profile/employment']               = 'profile/employment';
+$route['profile/employment/add']           = 'profile/employment_add';
+$route['profile/employment/edit/(:num)']   = 'profile/employment_edit/$1';
+$route['profile/employment/save']          = 'profile/employment_save';
+$route['profile/employment/delete/(:num)'] = 'profile/employment_delete/$1';
+
+// Update dashboard route to point to profile
+$route['dashboard'] = 'profile/index';
+

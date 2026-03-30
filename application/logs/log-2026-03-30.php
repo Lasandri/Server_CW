@@ -1,0 +1,639 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated C:\xampp\htdocs\CW\system\core\URI.php 102
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Router::$uri is deprecated C:\xampp\htdocs\CW\system\core\Router.php 128
+DEBUG - 2026-03-30 19:07:00 --> No URI present. Default controller set.
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$config is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$log is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$uri is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$router is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$output is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$security is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$input is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$lang is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 402
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_DB_mysqli_driver::$failover is deprecated C:\xampp\htdocs\CW\system\database\DB_driver.php 372
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 301
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> session_set_cookie_params(): Session cookie parameters cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 326
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 353
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 363
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 364
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 365
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 366
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 424
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> session_set_save_handler(): Session save handler cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 110
+ERROR - 2026-03-30 19:07:00 --> Severity: Warning --> session_start(): Session cannot be started after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 137
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property Auth::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 367
+DEBUG - 2026-03-30 19:07:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:07:00 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:07:00 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$load is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$config is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$log is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$uri is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$router is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$output is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$security is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$input is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$lang is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:07:00 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated C:\xampp\htdocs\CW\system\core\URI.php 102
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Router::$uri is deprecated C:\xampp\htdocs\CW\system\core\Router.php 128
+DEBUG - 2026-03-30 19:08:14 --> No URI present. Default controller set.
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$config is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$log is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$uri is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$router is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$output is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$security is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$input is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$lang is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 402
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_DB_mysqli_driver::$failover is deprecated C:\xampp\htdocs\CW\system\database\DB_driver.php 372
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 301
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> session_set_cookie_params(): Session cookie parameters cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 326
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 353
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 363
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 364
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 365
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 366
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 424
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> session_set_save_handler(): Session save handler cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 110
+ERROR - 2026-03-30 19:08:14 --> Severity: Warning --> session_start(): Session cannot be started after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 137
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property Auth::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 367
+DEBUG - 2026-03-30 19:08:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:08:14 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:08:14 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$load is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$config is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$log is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$uri is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$router is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$output is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$security is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$input is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$lang is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:14 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated C:\xampp\htdocs\CW\system\core\URI.php 102
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Router::$uri is deprecated C:\xampp\htdocs\CW\system\core\Router.php 128
+DEBUG - 2026-03-30 19:08:15 --> No URI present. Default controller set.
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$config is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$log is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$uri is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$router is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$output is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$security is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$input is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$lang is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 402
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_DB_mysqli_driver::$failover is deprecated C:\xampp\htdocs\CW\system\database\DB_driver.php 372
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 301
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> session_set_cookie_params(): Session cookie parameters cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 326
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 353
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 363
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 364
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 365
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 366
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 424
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> session_set_save_handler(): Session save handler cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 110
+ERROR - 2026-03-30 19:08:15 --> Severity: Warning --> session_start(): Session cannot be started after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 137
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property Auth::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 367
+DEBUG - 2026-03-30 19:08:15 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:08:15 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:08:15 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$load is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$config is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$log is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$uri is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$router is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$output is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$security is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$input is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$lang is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:15 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated C:\xampp\htdocs\CW\system\core\URI.php 102
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Router::$uri is deprecated C:\xampp\htdocs\CW\system\core\Router.php 128
+DEBUG - 2026-03-30 19:08:16 --> No URI present. Default controller set.
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$config is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$log is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$uri is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$router is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$output is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$security is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$input is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$lang is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 402
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_DB_mysqli_driver::$failover is deprecated C:\xampp\htdocs\CW\system\database\DB_driver.php 372
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 301
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> session_set_cookie_params(): Session cookie parameters cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 326
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 353
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 363
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 364
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 365
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 366
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 424
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> session_set_save_handler(): Session save handler cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 110
+ERROR - 2026-03-30 19:08:16 --> Severity: Warning --> session_start(): Session cannot be started after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 137
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property Auth::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 367
+DEBUG - 2026-03-30 19:08:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:08:16 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:08:16 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$load is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$config is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$log is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$uri is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$router is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$output is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$security is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$input is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$lang is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:16 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated C:\xampp\htdocs\CW\system\core\URI.php 102
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Router::$uri is deprecated C:\xampp\htdocs\CW\system\core\Router.php 128
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$config is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$log is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$uri is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$router is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$output is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$security is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$input is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$lang is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 402
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_DB_mysqli_driver::$failover is deprecated C:\xampp\htdocs\CW\system\database\DB_driver.php 372
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 301
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> session_set_cookie_params(): Session cookie parameters cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 326
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 353
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 363
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 364
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 365
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 366
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 424
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> session_set_save_handler(): Session save handler cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 110
+ERROR - 2026-03-30 19:08:57 --> Severity: Warning --> session_start(): Session cannot be started after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 137
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property Auth::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 367
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$load is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$config is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$log is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$uri is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$router is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$output is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$security is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$input is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$lang is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+ERROR - 2026-03-30 19:08:57 --> Severity: 8192 --> Creation of dynamic property CI_Loader::$User_model is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 937
+DEBUG - 2026-03-30 19:13:01 --> No URI present. Default controller set.
+DEBUG - 2026-03-30 19:13:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:01 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:01 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:12 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:12 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:16 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:16 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:36 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:13:36 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:14:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:14:05 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:14:05 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:14:37 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:14:37 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:14:37 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:17:06 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:17:06 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:17:06 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:17:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:17:12 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:17:12 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:14 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:14 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:14 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:14 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:23 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:23 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:20:24 --> Session class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:20:24 --> Severity: error --> Exception: Call to undefined function site_url() C:\xampp\htdocs\CW\application\controllers\Dashboard.php 27
+ERROR - 2026-03-30 19:34:25 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+ERROR - 2026-03-30 19:34:29 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:34:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:35 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:35 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:34:35 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:34:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:36 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:36 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:34:36 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:34:37 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:37 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:37 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:34:37 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:34:37 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:37 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:37 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:34:37 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:34:38 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:38 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:38 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:34:38 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:34:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:39 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:39 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:34:39 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:34:44 --> No URI present. Default controller set.
+DEBUG - 2026-03-30 19:34:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:44 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:44 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:34:44 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:34:50 --> No URI present. Default controller set.
+DEBUG - 2026-03-30 19:34:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:50 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:50 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:34:50 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:34:59 --> No URI present. Default controller set.
+DEBUG - 2026-03-30 19:34:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:59 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:34:59 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 19:34:59 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+ERROR - 2026-03-30 19:35:02 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property CI_URI::$config is deprecated C:\xampp\htdocs\CW\system\core\URI.php 102
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property CI_Router::$uri is deprecated C:\xampp\htdocs\CW\system\core\Router.php 128
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$benchmark is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$config is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$log is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$hooks is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$utf8 is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$uri is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$exceptions is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$router is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$output is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$security is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$input is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$lang is deprecated C:\xampp\htdocs\CW\system\core\Controller.php 83
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$db is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 402
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property CI_DB_mysqli_driver::$failover is deprecated C:\xampp\htdocs\CW\system\database\DB_driver.php 372
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 301
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> session_set_cookie_params(): Session cookie parameters cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 326
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 353
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 363
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 364
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 365
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 366
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> ini_set(): Session ini settings cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 424
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> session_set_save_handler(): Session save handler cannot be changed after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 110
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> session_start(): Session cannot be started after headers have already been sent C:\xampp\htdocs\CW\system\libraries\Session\Session.php 137
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$session is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$form_validation is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:37:59 --> Severity: 8192 --> Creation of dynamic property Profile::$email is deprecated C:\xampp\htdocs\CW\system\core\Loader.php 1302
+ERROR - 2026-03-30 19:37:59 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+ERROR - 2026-03-30 19:37:59 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\CW\system\core\Exceptions.php:284) C:\xampp\htdocs\CW\system\core\Common.php 575
+ERROR - 2026-03-30 19:39:21 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Profile_model.php 23
+DEBUG - 2026-03-30 19:40:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:28 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:35 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:39 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:41 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:40:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:18 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:18 --> The filetype you are attempting to upload is not allowed.
+DEBUG - 2026-03-30 19:41:43 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:43 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:43 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:43 --> The filetype you are attempting to upload is not allowed.
+DEBUG - 2026-03-30 19:41:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:54 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:41:54 --> The filetype you are attempting to upload is not allowed.
+DEBUG - 2026-03-30 19:42:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:00 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:09 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:17 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:34 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:34 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:34 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:34 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:34 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:34 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:39 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:42:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:07 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:07 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:16 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:23 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:27 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:34 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:34 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:34 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:35 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:39 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:44:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:13 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:13 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:17 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:22 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:24 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:45:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:22 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:22 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:24 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:29 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:31 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:31 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:31 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:47 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:47 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:49 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:51 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:55 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:57 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:59 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:46:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:11 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:11 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:13 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:16 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:18 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:23 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:23 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:25 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:27 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:29 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:42 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:42 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:45 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:47:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:48:58 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:48:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:49:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:49:19 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:49:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:51:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:51:00 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:51:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:51:00 --> The filetype you are attempting to upload is not allowed.
+DEBUG - 2026-03-30 19:52:37 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:37 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:37 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:38 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:38 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:38 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:41 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:42 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:44 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:48 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:52:48 --> The filetype you are attempting to upload is not allowed.
+DEBUG - 2026-03-30 19:54:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:54:07 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:54:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:54:07 --> The filetype you are attempting to upload is not allowed.
+DEBUG - 2026-03-30 19:55:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:49 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:52 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:54 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:59 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:55:59 --> The filetype you are attempting to upload is not allowed.
+DEBUG - 2026-03-30 19:56:04 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:04 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:04 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:08 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:11 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:13 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:41 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:56:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:57:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:57:24 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:57:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:57:24 --> The filetype you are attempting to upload is not allowed.
+DEBUG - 2026-03-30 19:58:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:58:47 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:58:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 19:58:47 --> The filetype you are attempting to upload is not allowed.
+ERROR - 2026-03-30 20:01:13 --> Severity: error --> Exception: syntax error, unexpected token "public" C:\xampp\htdocs\CW\application\controllers\Profile.php 125
+ERROR - 2026-03-30 20:01:16 --> Severity: error --> Exception: syntax error, unexpected token "public" C:\xampp\htdocs\CW\application\controllers\Profile.php 125
+ERROR - 2026-03-30 20:01:35 --> Severity: error --> Exception: syntax error, unexpected token "public" C:\xampp\htdocs\CW\application\controllers\Profile.php 125
+ERROR - 2026-03-30 20:03:08 --> Severity: error --> Exception: syntax error, unexpected token "public" C:\xampp\htdocs\CW\application\controllers\Profile.php 125
+ERROR - 2026-03-30 20:03:09 --> Severity: error --> Exception: syntax error, unexpected token "public" C:\xampp\htdocs\CW\application\controllers\Profile.php 125
+ERROR - 2026-03-30 20:03:10 --> Severity: error --> Exception: syntax error, unexpected token "public" C:\xampp\htdocs\CW\application\controllers\Profile.php 125
+DEBUG - 2026-03-30 20:03:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:03:44 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:03:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:03:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:03:47 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:03:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:03:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:03:52 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:03:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:03:52 --> The filetype you are attempting to upload is not allowed.
+DEBUG - 2026-03-30 20:04:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:39 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:40 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:40 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:44 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:44 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:46 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:51 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:51 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:55 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:04:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:05:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:05:17 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:05:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:05:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:05:17 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 20:05:17 --> Session class already loaded. Second attempt ignored.
