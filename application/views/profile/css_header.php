@@ -93,7 +93,8 @@
 <div class="navbar">
     <h1>🎓 Alumni Influencers</h1>
     <div>
-        <a href="<?php echo site_url('profile'); ?>">Dashboard</a>
+        <a href="<?php echo site_url('profile'); ?>">Profile</a>
+        <a href="<?php echo site_url('bidding'); ?>">🏆 Bidding</a>
         <a href="<?php echo site_url('logout'); ?>">Logout</a>
     </div>
 </div>

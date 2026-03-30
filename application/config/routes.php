@@ -129,6 +129,23 @@ $route['profile/employment/edit/(:num)']   = 'profile/employment_edit/$1';
 $route['profile/employment/save']          = 'profile/employment_save';
 $route['profile/employment/delete/(:num)'] = 'profile/employment_delete/$1';
 
+// ================================================================
+// Bidding Routes — use underscores in route URLs
+// ================================================================
+$route['bidding']                      = 'bidding/index';
+$route['bidding/place']                = 'bidding/place';
+$route['bidding/update']               = 'bidding/update';
+$route['bidding/cancel']               = 'bidding/cancel';
+$route['bidding/history']              = 'bidding/history';
+$route['bidding/notifications']        = 'bidding/notifications';
+$route['bidding/select_winner']        = 'bidding/select_winner';
+$route['bidding/reset_winner']         = 'bidding/reset_winner';
+$route['bidding/alumni_of_the_day']    = 'bidding/alumni_of_the_day';
+
+// Also keep hyphenated versions so both work
+$route['bidding/select-winner']        = 'bidding/select_winner';
+$route['bidding/reset-winner']         = 'bidding/reset_winner';
+$route['bidding/alumni-of-the-day']    = 'bidding/alumni_of_the_day';
 // Update dashboard route to point to profile
 $route['dashboard'] = 'profile/index';
 
