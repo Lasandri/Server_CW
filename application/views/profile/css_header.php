@@ -95,6 +95,7 @@
     <div>
         <a href="<?php echo site_url('profile'); ?>">Profile</a>
         <a href="<?php echo site_url('bidding'); ?>">🏆 Bidding</a>
+        <a href="<?php echo site_url('developer'); ?>">🔑 API Keys</a>
         <a href="<?php echo site_url('logout'); ?>">Logout</a>
     </div>
 </div>

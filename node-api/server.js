@@ -1,18 +1,5 @@
 /**
- * Alumni Influencers Platform - Node.js API Server
- * 
- * Entry point for the REST API layer.
- * Runs alongside CodeIgniter (PHP) which handles web views.
- * 
- * Features:
- *   - Express.js with security middleware (Helmet, CORS, rate limiting)
- *   - JWT-based authentication for API consumers
- *   - MySQL database (shared with CodeIgniter)
- *   - Swagger API documentation at /api-docs
- * 
- * Architecture:
- *   CodeIgniter (port 8080) → Web pages, sessions, CSRF
- *   Node.js (port 3000)     → REST API, JWT tokens, Swagger docs
+ * Alumni Influencers Platform — Node.js API Server
  */
 
 const express = require('express');
@@ -22,36 +9,36 @@ const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 require('dotenv').config();
 
-const authRoutes = require('./routes/authRoutes');
+const clientRoutes = require('./routes/clientRoutes');
 const { generalLimiter } = require('./middleware/rateLimiter');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ================================================================
-// SECURITY MIDDLEWARE
+// ⚠️ MIDDLEWARE MUST BE BEFORE ROUTES
 // ================================================================
 
-// Helmet: Sets various HTTP security headers
+// Security headers
 app.use(helmet());
 
-// CORS: Allow CodeIgniter frontend to call this API
+// CORS
 app.use(cors({
-    origin: [process.env.CI_APP_URL || 'http://localhost:8080'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+    origin: [process.env.CI_APP_URL || 'http://localhost:8080', 'http://localhost:3000'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
 }));
 
-// Parse JSON request bodies (limit size to prevent large payload attacks)
+// ⚠️ JSON parser MUST come before routes
 app.use(express.json({ limit: '10kb' }));
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 
-// General rate limiting on all routes
+// Rate limiting
 app.use(generalLimiter);
 
 // ================================================================
-// SWAGGER API DOCUMENTATION
+// SWAGGER CONFIGURATION
 // ================================================================
 
 const swaggerOptions = {
@@ -60,10 +47,10 @@ const swaggerOptions = {
         info: {
             title: 'Alumni Influencers API',
             version: '1.0.0',
-            description: 'REST API for the University of Eastminster Alumni Influencers Platform',
+            description: 'API for accessing alumni data',
         },
         servers: [
-            { url: `http://localhost:${PORT}`, description: 'Development server' },
+            { url: `http://localhost:${PORT}`, description: 'Development Server' },
         ],
         components: {
             securitySchemes: {
@@ -73,48 +60,78 @@ const swaggerOptions = {
                     bearerFormat: 'JWT',
                 },
             },
+            schemas: {
+                AuthRequest: {
+                    type: 'object',
+                    required: ['api_key', 'api_secret'],
+                    properties: {
+                        api_key: { type: 'string', example: 'a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6' },
+                        api_secret: { type: 'string', example: 'x1y2z3a4b5c6d7e8f9g0...' },
+                    },
+                },
+                AuthResponse: {
+                    type: 'object',
+                    properties: {
+                        status: { type: 'string', example: 'success' },
+                        data: {
+                            type: 'object',
+                            properties: {
+                                bearer_token: { type: 'string' },
+                                expires_in: { type: 'integer', example: 86400 },
+                            },
+                        },
+                    },
+                },
+            },
         },
+        tags: [
+            { name: 'Authentication', description: 'API key authentication' },
+            { name: 'Alumni', description: 'Access alumni profiles' },
+            { name: 'System', description: 'Health checks' },
+        ],
     },
     apis: ['./routes/*.js'],
 };
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.get('/api-docs.json', (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(swaggerSpec);
+});
 
 // ================================================================
-// API ROUTES
+// ⚠️ ROUTES — Mount ONLY ONCE
 // ================================================================
 
-// Health check endpoint
+// Health check (public)
 app.get('/api/health', (req, res) => {
     res.status(200).json({
         status: 'success',
-        message: 'Alumni Influencers API is running.',
+        message: 'Alumni Influencers API is running',
         timestamp: new Date().toISOString(),
     });
 });
 
-// Auth routes
-app.use('/api/auth', authRoutes);
+// ⚠️ Mount client routes ONLY ONCE at /api
+app.use('/api', clientRoutes);
 
 // ================================================================
 // ERROR HANDLING
 // ================================================================
 
-// 404 handler
 app.use((req, res) => {
     res.status(404).json({
         status: 'error',
-        message: `Route ${req.method} ${req.originalUrl} not found.`,
+        message: `Route ${req.method} ${req.originalUrl} not found`,
     });
 });
 
-// Global error handler
 app.use((err, req, res, next) => {
     console.error('Unhandled error:', err);
     res.status(500).json({
         status: 'error',
-        message: 'An unexpected error occurred.',
+        message: 'An unexpected error occurred',
     });
 });
 

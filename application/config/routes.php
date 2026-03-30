@@ -149,3 +149,15 @@ $route['bidding/alumni-of-the-day']    = 'bidding/alumni_of_the_day';
 // Update dashboard route to point to profile
 $route['dashboard'] = 'profile/index';
 
+// ================================================================
+// Developer / API Key Routes
+// ================================================================
+$route['developer']                    = 'developer/index';
+$route['developer/create']             = 'developer/create';
+$route['developer/create_save']        = 'developer/create_save';
+$route['developer/stats/(:num)']       = 'developer/stats/$1';
+$route['developer/revoke']             = 'developer/revoke';
+$route['developer/revoke_token']       = 'developer/revoke_token';
+$route['developer/reactivate/(:num)']  = 'developer/reactivate/$1';
+$route['developer/delete/(:num)']      = 'developer/delete_key/$1';
+

@@ -1059,3 +1059,163 @@ DEBUG - 2026-03-30 21:24:03 --> Session class already loaded. Second attempt ign
 DEBUG - 2026-03-30 21:24:07 --> Session class already loaded. Second attempt ignored.
 DEBUG - 2026-03-30 21:24:07 --> Form_validation class already loaded. Second attempt ignored.
 DEBUG - 2026-03-30 21:24:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:25 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:25 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:25 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:30 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:30 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:31 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:31 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:31 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:46 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:46 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:46 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:55 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:55 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:55 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:55 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:08:55 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:09:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:09:24 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:09:24 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:09:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:09:29 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:09:29 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:09:34 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:09:34 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:09:34 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:17 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:17 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:24 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:24 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:25 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:25 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:46 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:46 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:52 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:52 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:57 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:10:57 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:01 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:01 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:01 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:08 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:08 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:17 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:17 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:17 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:17 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:47 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:47 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:47 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:50 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:50 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:50 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:50 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:54 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:54 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:54 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:58 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:11:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:12:02 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:12:02 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:12:02 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:28:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:28:18 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:28:18 --> Session class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 23:28:20 --> Severity: error --> Exception: Cannot call constructor C:\xampp\htdocs\CW\application\models\Api_key_model.php 24
+DEBUG - 2026-03-30 23:29:56 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:29:56 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:29:56 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:30:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:30:00 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:30:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:30:02 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:30:02 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:30:02 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:30:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:30:05 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:30:05 --> Session class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 23:30:05 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 27
+ERROR - 2026-03-30 23:30:05 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 27
+ERROR - 2026-03-30 23:30:05 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 34
+ERROR - 2026-03-30 23:30:05 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 34
+ERROR - 2026-03-30 23:30:05 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 50
+ERROR - 2026-03-30 23:30:05 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 50
+DEBUG - 2026-03-30 23:35:34 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:35:34 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:35:34 --> Session class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 23:35:35 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 51
+ERROR - 2026-03-30 23:35:35 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 51
+ERROR - 2026-03-30 23:35:35 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 57
+ERROR - 2026-03-30 23:35:35 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 57
+ERROR - 2026-03-30 23:35:35 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 72
+ERROR - 2026-03-30 23:35:35 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 72
+DEBUG - 2026-03-30 23:37:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:11 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:12 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:14 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:16 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:16 --> Session class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 23:37:16 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 51
+ERROR - 2026-03-30 23:37:16 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 51
+ERROR - 2026-03-30 23:37:16 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 57
+ERROR - 2026-03-30 23:37:16 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 57
+ERROR - 2026-03-30 23:37:16 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 72
+ERROR - 2026-03-30 23:37:16 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 72
+DEBUG - 2026-03-30 23:37:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:35 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:38 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:38 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:37:38 --> Session class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 23:37:38 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 51
+ERROR - 2026-03-30 23:37:38 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 51
+ERROR - 2026-03-30 23:37:38 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 57
+ERROR - 2026-03-30 23:37:38 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 57
+ERROR - 2026-03-30 23:37:38 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 72
+ERROR - 2026-03-30 23:37:38 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 72
+DEBUG - 2026-03-30 23:59:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:59:42 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-30 23:59:42 --> Session class already loaded. Second attempt ignored.
+ERROR - 2026-03-30 23:59:42 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 51
+ERROR - 2026-03-30 23:59:42 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 51
+ERROR - 2026-03-30 23:59:42 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 57
+ERROR - 2026-03-30 23:59:42 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 57
+ERROR - 2026-03-30 23:59:42 --> Severity: Warning --> Undefined variable $new_key C:\xampp\htdocs\CW\application\views\developer\create_key.php 72
+ERROR - 2026-03-30 23:59:42 --> Severity: Warning --> Trying to access array offset on value of type null C:\xampp\htdocs\CW\application\views\developer\create_key.php 72
