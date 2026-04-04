@@ -130,3 +130,36 @@ DEBUG - 2026-03-31 01:03:29 --> Session class already loaded. Second attempt ign
 DEBUG - 2026-03-31 01:03:32 --> Session class already loaded. Second attempt ignored.
 DEBUG - 2026-03-31 01:03:32 --> Form_validation class already loaded. Second attempt ignored.
 DEBUG - 2026-03-31 01:03:32 --> Session class already loaded. Second attempt ignored.
+ERROR - 2026-03-31 07:33:16 --> Not Found: Migrate/index
+DEBUG - 2026-03-31 07:35:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:35:36 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:35:36 --> Email class already loaded. Second attempt ignored.
+ERROR - 2026-03-31 07:36:59 --> Not Found: Migrate/index
+DEBUG - 2026-03-31 07:39:07 --> No URI present. Default controller set.
+DEBUG - 2026-03-31 07:39:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:39:07 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:39:07 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:39:39 --> No URI present. Default controller set.
+DEBUG - 2026-03-31 07:39:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:39:39 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:39:39 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:46:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:46:48 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:46:48 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:46:58 --> No URI present. Default controller set.
+DEBUG - 2026-03-31 07:46:58 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:46:58 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:46:58 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:47:33 --> No URI present. Default controller set.
+DEBUG - 2026-03-31 07:47:33 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:47:33 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 07:47:33 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 08:50:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 08:50:17 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 08:50:17 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 08:50:20 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 08:50:20 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 08:50:20 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 08:50:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 08:50:23 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-03-31 08:50:23 --> Email class already loaded. Second attempt ignored.
