@@ -485,7 +485,7 @@ class Auth extends CI_Controller
         // Load email config
         $this->email->initialize($this->config->item('email') ?: array());
 
-        $this->email->from('noreply@eastminster.ac.uk', 'Alumni Influencers Platform');
+        $this->email->from('lasandri.20221602@iit.ac.lk', 'Alumni Influencers Platform');
         $this->email->to($to_email);
         $this->email->subject('Verify Your Email - Alumni Influencers');
         $this->email->message(
@@ -502,11 +502,20 @@ class Auth extends CI_Controller
             <p><small>If you didn't create this account, ignore this email.</small></p>"
         );
 
-        $this->email->send();
+        // $this->email->send();
+
+        if ($this->email->send()) {
+            log_message('info', 'Email sent to: ' . $to_email);
+        } else {
+            echo '<pre>';
+            echo $this->email->print_debugger();
+            echo '</pre>';
+            die();
+        }
     }
 
     /**
-     * Send password reset email.
+     * Send password reset email using real Gmail SMTP.
      *
      * @param string $to_email
      * @param string $first_name
@@ -516,9 +525,21 @@ class Auth extends CI_Controller
     {
         $reset_url = site_url('reset-password?token=' . $token);
 
-        $this->email->initialize($this->config->item('email') ?: array());
+        // Reload email config to ensure fresh settings
+        $this->email->initialize(array(
+            'protocol'    => 'smtp',
+            'smtp_host'   => 'smtp.gmail.com',
+            'smtp_port'   => 587,
+            'smtp_user'   => 'your_real_gmail@gmail.com',  // Change this
+            'smtp_pass'   => 'your_app_password_here',      // Change this
+            'smtp_crypto' => 'tls',
+            'mailtype'    => 'html',
+            'charset'     => 'UTF-8',
+            'wordwrap'    => TRUE,
+            'newline'     => "\r\n",
+        ));
 
-        $this->email->from('noreply@eastminster.ac.uk', 'Alumni Influencers Platform');
+        $this->email->from('lasandri.20221602@iit.ac.lk', 'Alumni Influencers Platform');
         $this->email->to($to_email);
         $this->email->subject('Password Reset - Alumni Influencers');
         $this->email->message(
@@ -526,8 +547,8 @@ class Auth extends CI_Controller
             <p>Hello {$first_name},</p>
             <p>Click below to reset your password:</p>
             <p><a href='{$reset_url}' 
-                  style='background-color:#2196F3;color:white;padding:12px 24px;
-                         text-decoration:none;border-radius:4px;display:inline-block;'>
+                style='background-color:#2196F3;color:white;padding:12px 24px;
+                        text-decoration:none;border-radius:4px;display:inline-block;'>
                 Reset Password
             </a></p>
             <p>Or copy this URL: {$reset_url}</p>
@@ -536,6 +557,9 @@ class Auth extends CI_Controller
             <p><small>If you didn't request this, ignore this email.</small></p>"
         );
 
-        $this->email->send();
+        // Send and log any errors
+        if (!$this->email->send()) {
+            log_message('error', 'Reset email failed: ' . $this->email->print_debugger());
+        }
     }
 }
