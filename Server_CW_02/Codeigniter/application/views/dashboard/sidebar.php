@@ -38,12 +38,20 @@
             </a>
         </li>
         <li class="nav-item">
-    <a href="<?php echo base_url('index.php/bidding'); ?>"
-       class="nav-link <?php echo ($active_page === 'bidding') ? 'active' : ''; ?>">
-        <i class="fas fa-gavel"></i>
-        <span>Blind Bidding</span>
-    </a>
-</li>
+            <a href="<?php echo base_url('index.php/bidding'); ?>"
+            class="nav-link <?php echo ($active_page === 'bidding') ? 'active' : ''; ?>">
+                <i class="fas fa-gavel"></i>
+                <span>Blind Bidding</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="<?php echo base_url('index.php/security'); ?>"
+            class="nav-link <?php echo ($active_page === 'security') ? 'active' : ''; ?>">
+                <i class="fas fa-shield-alt"></i>
+                <span>Security & API Keys</span>
+            </a>
+        </li>
     </ul>
 
     <!-- User info at bottom -->

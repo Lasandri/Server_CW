@@ -32,3 +32,10 @@ $route['dashboard/alumni']       = 'Dashboard/alumni';
 $route['bidding']          = 'Bidding/index';
 $route['bidding/index']    = 'Bidding/index';
 $route['bidding/featured'] = 'Bidding/featured';
+
+// application/config/routes.php - add security routes
+
+$route['security']             = 'Security/index';
+$route['security/index']       = 'Security/index';
+$route['security/toggle_key']  = 'Security/toggle_key';
+$route['security/create_key']  = 'Security/create_key';

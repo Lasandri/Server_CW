@@ -26,15 +26,17 @@ app.use(express.urlencoded({ extended: true }));
 app.set('trust proxy', 1);
 
 // ── Routes ─────────────────────────────────────────────────────────────────
-const authRoutes     = require('./routes/authRoutes');
-const alumniRoutes   = require('./routes/alumniRoutes');
+const authRoutes      = require('./routes/authRoutes');
+const alumniRoutes    = require('./routes/alumniRoutes');
 const analyticsRoutes = require('./routes/analyticsRoutes');
-const biddingRoutes  = require('./routes/biddingRoutes');
+const biddingRoutes   = require('./routes/biddingRoutes');
+const securityRoutes  = require('./routes/securityRoutes');
 
 app.use('/api/auth',      authRoutes);
 app.use('/api/alumni',    alumniRoutes);
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/bidding',   biddingRoutes);
+app.use('/api/security',  securityRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
