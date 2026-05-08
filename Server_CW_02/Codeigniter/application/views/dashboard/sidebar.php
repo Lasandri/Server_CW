@@ -37,6 +37,13 @@
                 <span>View Alumni</span>
             </a>
         </li>
+        <li class="nav-item">
+    <a href="<?php echo base_url('index.php/bidding'); ?>"
+       class="nav-link <?php echo ($active_page === 'bidding') ? 'active' : ''; ?>">
+        <i class="fas fa-gavel"></i>
+        <span>Blind Bidding</span>
+    </a>
+</li>
     </ul>
 
     <!-- User info at bottom -->

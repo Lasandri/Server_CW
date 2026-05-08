@@ -25,3 +25,10 @@ $route['dashboard']              = 'Dashboard/index';
 $route['dashboard/index']        = 'Dashboard/index';
 $route['dashboard/graphs']       = 'Dashboard/graphs';
 $route['dashboard/alumni']       = 'Dashboard/alumni';
+
+
+// application/config/routes.php - add bidding routes
+
+$route['bidding']          = 'Bidding/index';
+$route['bidding/index']    = 'Bidding/index';
+$route['bidding/featured'] = 'Bidding/featured';
