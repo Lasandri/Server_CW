@@ -35,6 +35,11 @@ router.post('/forgot-password', validateForgotPassword, authController.forgotPas
 // Submit new password with reset token
 router.post('/reset-password/:token', validateResetPassword, authController.resetPassword);
 
+// All routes require read:alumni permission
+router.get('/', verifyApiKey('read:alumni'), alumniController.getAlumni);
+router.get('/filters', verifyApiKey('read:alumni'), alumniController.getFilterOptions);
+router.get('/:id', verifyApiKey('read:alumni'), alumniController.getAlumniById);
+
 // Get current user profile (protected)
 router.get('/me', verifyToken, authController.getProfile);
 

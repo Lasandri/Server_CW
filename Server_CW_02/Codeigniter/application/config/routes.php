@@ -20,4 +20,8 @@ $route['auth/forgot_password']            = 'Auth/forgot_password';
 $route['auth/forgot_password_submit']     = 'Auth/forgot_password_submit';
 $route['auth/reset_password/(:any)']      = 'Auth/reset_password/$1';
 $route['auth/reset_password_submit']      = 'Auth/reset_password_submit';
-$route['dashboard']                       = 'Dashboard/index';
+
+$route['dashboard']              = 'Dashboard/index';
+$route['dashboard/index']        = 'Dashboard/index';
+$route['dashboard/graphs']       = 'Dashboard/graphs';
+$route['dashboard/alumni']       = 'Dashboard/alumni';

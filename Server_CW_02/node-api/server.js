@@ -30,8 +30,14 @@ app.use(express.urlencoded({ extended: true }));
 app.set('trust proxy', 1);
 
 // ── Routes ────────────────────────────────────────────────────────────────────
-const authRoutes = require('./routes/authRoutes');
-app.use('/api/auth', authRoutes);
+const authRoutes     = require('./routes/authRoutes');
+const alumniRoutes   = require('./routes/alumniRoutes');
+const analyticsRoutes = require('./routes/analyticsRoutes');
+
+app.use('/api/auth',      authRoutes);
+app.use('/api/alumni',    alumniRoutes);
+app.use('/api/analytics', analyticsRoutes);
+
 
 // Health check
 app.get('/api/health', (req, res) => {
