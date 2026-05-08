@@ -219,3 +219,17 @@ DEBUG - 2026-05-08 10:30:24 --> Email class already loaded. Second attempt ignor
 DEBUG - 2026-05-08 10:30:25 --> Session class already loaded. Second attempt ignored.
 DEBUG - 2026-05-08 10:30:25 --> Form_validation class already loaded. Second attempt ignored.
 DEBUG - 2026-05-08 10:30:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:15 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:15 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:15 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:15 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:15 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:15 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:23 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:23 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:23 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-08 11:25:23 --> Session class already loaded. Second attempt ignored.
+ERROR - 2026-05-08 12:26:59 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it C:\xampp\htdocs\Server_CW\Server_CW_01\Codeigniter\system\database\drivers\mysqli\mysqli_driver.php 211
+ERROR - 2026-05-08 12:26:59 --> Severity: error --> Exception: Unable to connect to the database. C:\xampp\htdocs\Server_CW\Server_CW_01\Codeigniter\system\database\DB_driver.php 434
