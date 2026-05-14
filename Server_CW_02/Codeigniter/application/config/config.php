@@ -49,4 +49,4 @@ $config['compress_output'] = FALSE;
 $config['time_reference'] = 'local';
 $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
-$config['api_base_url'] = 'http://localhost:3000/api';
+$config['api_base_url'] = 'http://localhost:3001/api';

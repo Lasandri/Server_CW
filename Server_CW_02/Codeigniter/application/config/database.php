@@ -51,3 +51,8 @@ $db['default'] = array(
     'failover' => array(),
     'save_queries' => TRUE
 );
+
+
+$db['cw1'] = [
+   'database' => 'alumni_platform'
+];
