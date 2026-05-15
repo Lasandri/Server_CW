@@ -1,52 +1,86 @@
 // node-api/controllers/analyticsController.js
+// REPLACE ENTIRE FILE
 
 const pool = require('../config/database');
 
 /**
+ * Build base WHERE clause from filters
+ */
+function buildFilters(programme, graduation_year) {
+    let conditions = [
+        'u.is_active = 1',
+        'u.is_email_verified = 1'
+    ];
+    let params = [];
+
+    if (programme && programme !== 'all') {
+        conditions.push('d.programme = ?');
+        params.push(programme);
+    }
+
+    if (graduation_year && graduation_year !== 'all') {
+        conditions.push('d.graduation_year = ?');
+        params.push(parseInt(graduation_year));
+    }
+
+    return { conditions, params };
+}
+
+/**
  * GET /api/analytics/overview
- * Dashboard summary stats
  */
 async function getOverview(req, res) {
     try {
         const { programme, graduation_year } = req.query;
 
-        let conditions = ['profile_visible = 1'];
-        let params = [];
-
-        if (programme && programme !== 'all') {
-            conditions.push('programme = ?');
-            params.push(programme);
-        }
-        if (graduation_year && graduation_year !== 'all') {
-            conditions.push('graduation_year = ?');
-            params.push(parseInt(graduation_year));
-        }
-
-        const where = 'WHERE ' + conditions.join(' AND ');
-
+        // Total verified alumni
         const [totalResult] = await pool.execute(
-            `SELECT COUNT(*) as total FROM alumni ${where}`, params
+            `SELECT COUNT(DISTINCT u.id) as total
+             FROM users u
+             LEFT JOIN alumni_profiles ap ON u.id = ap.user_id
+             WHERE u.is_active = 1 AND u.is_email_verified = 1`
         );
 
+        // Total distinct industry sectors
         const [sectorResult] = await pool.execute(
-            `SELECT COUNT(DISTINCT industry_sector) as count FROM alumni ${where}`, params
+            `SELECT COUNT(DISTINCT eh.industry_sector) as count
+             FROM employment_history eh
+             WHERE eh.industry_sector IS NOT NULL AND eh.industry_sector != ''`
         );
 
+        // Total distinct programmes
         const [programmeResult] = await pool.execute(
-            `SELECT COUNT(DISTINCT programme) as count FROM alumni ${where}`, params
+            `SELECT COUNT(DISTINCT d.programme) as count
+             FROM degrees d
+             WHERE d.programme IS NOT NULL AND d.programme != ''`
         );
 
+        // Total distinct graduation years
         const [yearResult] = await pool.execute(
-            `SELECT COUNT(DISTINCT graduation_year) as count FROM alumni ${where}`, params
+            `SELECT COUNT(DISTINCT d.graduation_year) as count
+             FROM degrees d
+             WHERE d.graduation_year IS NOT NULL`
+        );
+
+        // Total certifications earned post-grad
+        const [certResult] = await pool.execute(
+            `SELECT COUNT(*) as count FROM certifications`
+        );
+
+        // Total professional courses completed
+        const [courseResult] = await pool.execute(
+            `SELECT COUNT(*) as count FROM professional_courses`
         );
 
         return res.json({
             success: true,
             data: {
-                total_alumni: totalResult[0].total,
-                total_sectors: sectorResult[0].count,
+                total_alumni:     totalResult[0].total,
+                total_sectors:    sectorResult[0].count,
                 total_programmes: programmeResult[0].count,
-                total_years: yearResult[0].count
+                total_years:      yearResult[0].count,
+                total_certs:      certResult[0].count,
+                total_courses:    courseResult[0].count
             }
         });
 
@@ -58,33 +92,35 @@ async function getOverview(req, res) {
 
 /**
  * GET /api/analytics/employment-by-sector
- * Alumni count per industry sector
+ * Uses CW1 employment_history.industry_sector
  */
 async function getEmploymentBySector(req, res) {
     try {
         const { programme, graduation_year } = req.query;
+        const { conditions, params } = buildFilters(programme, graduation_year);
 
-        let conditions = ['profile_visible = 1'];
-        let params = [];
+        let query = `
+            SELECT eh.industry_sector, COUNT(DISTINCT u.id) as count
+            FROM users u
+            LEFT JOIN degrees d ON u.id = d.user_id
+            JOIN employment_history eh ON u.id = eh.user_id AND eh.is_current = 1
+            WHERE u.is_active = 1
+            AND eh.industry_sector IS NOT NULL
+            AND eh.industry_sector != ''
+        `;
 
         if (programme && programme !== 'all') {
-            conditions.push('programme = ?');
+            query += ' AND d.programme = ?';
             params.push(programme);
         }
         if (graduation_year && graduation_year !== 'all') {
-            conditions.push('graduation_year = ?');
+            query += ' AND d.graduation_year = ?';
             params.push(parseInt(graduation_year));
         }
 
-        const where = 'WHERE ' + conditions.join(' AND ');
+        query += ' GROUP BY eh.industry_sector ORDER BY count DESC';
 
-        const [rows] = await pool.execute(
-            `SELECT industry_sector, COUNT(*) as count
-             FROM alumni ${where}
-             GROUP BY industry_sector
-             ORDER BY count DESC`,
-            params
-        );
+        const [rows] = await pool.execute(query, params);
 
         return res.json({ success: true, data: rows });
 
@@ -96,48 +132,41 @@ async function getEmploymentBySector(req, res) {
 
 /**
  * GET /api/analytics/skills-gap
- * Most common post-graduation skills (curriculum gap analysis)
+ * Uses CW1 professional_courses (what alumni self-learned post-grad)
+ * This is the CURRICULUM GAP - courses they had to take themselves
  */
 async function getSkillsGap(req, res) {
     try {
         const { programme, graduation_year } = req.query;
 
-        let conditions = ['profile_visible = 1', 'skills IS NOT NULL'];
+        let query = `
+            SELECT pc.course_name as skill, COUNT(*) as count
+            FROM professional_courses pc
+            JOIN users u ON pc.user_id = u.id
+        `;
+
         let params = [];
+        let conditions = ['u.is_active = 1'];
 
         if (programme && programme !== 'all') {
-            conditions.push('programme = ?');
+            query += ' JOIN degrees d ON u.id = d.user_id';
+            conditions.push('d.programme = ?');
             params.push(programme);
         }
         if (graduation_year && graduation_year !== 'all') {
-            conditions.push('graduation_year = ?');
+            if (!query.includes('JOIN degrees')) {
+                query += ' JOIN degrees d ON u.id = d.user_id';
+            }
+            conditions.push('d.graduation_year = ?');
             params.push(parseInt(graduation_year));
         }
 
-        const where = 'WHERE ' + conditions.join(' AND ');
+        query += ' WHERE ' + conditions.join(' AND ');
+        query += ' GROUP BY pc.course_name ORDER BY count DESC LIMIT 15';
 
-        const [rows] = await pool.execute(
-            `SELECT skills FROM alumni ${where}`, params
-        );
+        const [rows] = await pool.execute(query, params);
 
-        // Count skill frequency
-        const skillCount = {};
-        rows.forEach(row => {
-            try {
-                const skills = JSON.parse(row.skills);
-                skills.forEach(skill => {
-                    skillCount[skill] = (skillCount[skill] || 0) + 1;
-                });
-            } catch (e) {}
-        });
-
-        // Sort and get top 15
-        const sorted = Object.entries(skillCount)
-            .sort((a, b) => b[1] - a[1])
-            .slice(0, 15)
-            .map(([skill, count]) => ({ skill, count }));
-
-        return res.json({ success: true, data: sorted });
+        return res.json({ success: true, data: rows });
 
     } catch (error) {
         console.error('Skills gap error:', error);
@@ -147,33 +176,40 @@ async function getSkillsGap(req, res) {
 
 /**
  * GET /api/analytics/top-employers
+ * Uses CW1 employment_history.company_name
  */
 async function getTopEmployers(req, res) {
     try {
         const { programme, graduation_year } = req.query;
 
-        let conditions = ['profile_visible = 1'];
-        let params = [];
+        let query = `
+            SELECT eh.company_name as employer, COUNT(DISTINCT u.id) as count
+            FROM employment_history eh
+            JOIN users u ON eh.user_id = u.id
+        `;
 
+        let params = [];
+        let conditions = ['u.is_active = 1', 'eh.is_current = 1',
+                         'eh.company_name IS NOT NULL'];
+
+        if (programme && graduation_year) {
+            query += ' JOIN degrees d ON u.id = d.user_id';
+        }
         if (programme && programme !== 'all') {
-            conditions.push('programme = ?');
+            if (!query.includes('JOIN degrees')) query += ' JOIN degrees d ON u.id = d.user_id';
+            conditions.push('d.programme = ?');
             params.push(programme);
         }
         if (graduation_year && graduation_year !== 'all') {
-            conditions.push('graduation_year = ?');
+            if (!query.includes('JOIN degrees')) query += ' JOIN degrees d ON u.id = d.user_id';
+            conditions.push('d.graduation_year = ?');
             params.push(parseInt(graduation_year));
         }
 
-        const where = 'WHERE ' + conditions.join(' AND ');
+        query += ' WHERE ' + conditions.join(' AND ');
+        query += ' GROUP BY eh.company_name ORDER BY count DESC LIMIT 10';
 
-        const [rows] = await pool.execute(
-            `SELECT employer, COUNT(*) as count
-             FROM alumni ${where}
-             GROUP BY employer
-             ORDER BY count DESC
-             LIMIT 10`,
-            params
-        );
+        const [rows] = await pool.execute(query, params);
 
         return res.json({ success: true, data: rows });
 
@@ -185,33 +221,37 @@ async function getTopEmployers(req, res) {
 
 /**
  * GET /api/analytics/job-titles
+ * Uses CW1 employment_history.job_title
  */
 async function getTopJobTitles(req, res) {
     try {
         const { programme, graduation_year } = req.query;
 
-        let conditions = ['profile_visible = 1'];
+        let query = `
+            SELECT eh.job_title, COUNT(DISTINCT u.id) as count
+            FROM employment_history eh
+            JOIN users u ON eh.user_id = u.id
+        `;
+
         let params = [];
+        let conditions = ['u.is_active = 1', 'eh.is_current = 1',
+                         'eh.job_title IS NOT NULL'];
 
         if (programme && programme !== 'all') {
-            conditions.push('programme = ?');
+            query += ' JOIN degrees d ON u.id = d.user_id';
+            conditions.push('d.programme = ?');
             params.push(programme);
         }
         if (graduation_year && graduation_year !== 'all') {
-            conditions.push('graduation_year = ?');
+            if (!query.includes('JOIN degrees')) query += ' JOIN degrees d ON u.id = d.user_id';
+            conditions.push('d.graduation_year = ?');
             params.push(parseInt(graduation_year));
         }
 
-        const where = 'WHERE ' + conditions.join(' AND ');
+        query += ' WHERE ' + conditions.join(' AND ');
+        query += ' GROUP BY eh.job_title ORDER BY count DESC LIMIT 10';
 
-        const [rows] = await pool.execute(
-            `SELECT job_title, COUNT(*) as count
-             FROM alumni ${where}
-             GROUP BY job_title
-             ORDER BY count DESC
-             LIMIT 10`,
-            params
-        );
+        const [rows] = await pool.execute(query, params);
 
         return res.json({ success: true, data: rows });
 
@@ -223,33 +263,39 @@ async function getTopJobTitles(req, res) {
 
 /**
  * GET /api/analytics/geographic
+ * Uses CW1 alumni_profiles city + country
  */
 async function getGeographic(req, res) {
     try {
         const { programme, graduation_year } = req.query;
 
-        let conditions = ['profile_visible = 1'];
+        let query = `
+            SELECT ap.city as location_city,
+                   ap.country as location_country,
+                   COUNT(DISTINCT u.id) as count
+            FROM alumni_profiles ap
+            JOIN users u ON ap.user_id = u.id
+        `;
+
         let params = [];
+        let conditions = ['u.is_active = 1',
+                         'ap.city IS NOT NULL', 'ap.city != ""'];
 
         if (programme && programme !== 'all') {
-            conditions.push('programme = ?');
+            query += ' JOIN degrees d ON u.id = d.user_id';
+            conditions.push('d.programme = ?');
             params.push(programme);
         }
         if (graduation_year && graduation_year !== 'all') {
-            conditions.push('graduation_year = ?');
+            if (!query.includes('JOIN degrees')) query += ' JOIN degrees d ON u.id = d.user_id';
+            conditions.push('d.graduation_year = ?');
             params.push(parseInt(graduation_year));
         }
 
-        const where = 'WHERE ' + conditions.join(' AND ');
+        query += ' WHERE ' + conditions.join(' AND ');
+        query += ' GROUP BY ap.city, ap.country ORDER BY count DESC LIMIT 10';
 
-        const [rows] = await pool.execute(
-            `SELECT location_city, location_country, COUNT(*) as count
-             FROM alumni ${where}
-             GROUP BY location_city, location_country
-             ORDER BY count DESC
-             LIMIT 10`,
-            params
-        );
+        const [rows] = await pool.execute(query, params);
 
         return res.json({ success: true, data: rows });
 
@@ -261,28 +307,30 @@ async function getGeographic(req, res) {
 
 /**
  * GET /api/analytics/graduation-trends
+ * Uses CW1 degrees.graduation_year
  */
 async function getGraduationTrends(req, res) {
     try {
         const { programme } = req.query;
 
-        let conditions = ['profile_visible = 1'];
+        let query = `
+            SELECT d.graduation_year, COUNT(DISTINCT d.user_id) as count
+            FROM degrees d
+            JOIN users u ON d.user_id = u.id
+            WHERE u.is_active = 1
+            AND d.graduation_year IS NOT NULL
+        `;
+
         let params = [];
 
         if (programme && programme !== 'all') {
-            conditions.push('programme = ?');
+            query += ' AND d.programme = ?';
             params.push(programme);
         }
 
-        const where = 'WHERE ' + conditions.join(' AND ');
+        query += ' GROUP BY d.graduation_year ORDER BY d.graduation_year ASC';
 
-        const [rows] = await pool.execute(
-            `SELECT graduation_year, COUNT(*) as count
-             FROM alumni ${where}
-             GROUP BY graduation_year
-             ORDER BY graduation_year ASC`,
-            params
-        );
+        const [rows] = await pool.execute(query, params);
 
         return res.json({ success: true, data: rows });
 
@@ -294,49 +342,70 @@ async function getGraduationTrends(req, res) {
 
 /**
  * GET /api/analytics/certifications
+ * Uses CW1 certifications table
  */
 async function getCertifications(req, res) {
     try {
         const { programme, graduation_year } = req.query;
 
-        let conditions = ['profile_visible = 1', 'certifications IS NOT NULL'];
+        let query = `
+            SELECT c.certification_name as cert,
+                   c.issuing_organization as provider,
+                   COUNT(*) as count
+            FROM certifications c
+            JOIN users u ON c.user_id = u.id
+        `;
+
         let params = [];
+        let conditions = ['u.is_active = 1', 'c.certification_name IS NOT NULL'];
 
         if (programme && programme !== 'all') {
-            conditions.push('programme = ?');
+            query += ' JOIN degrees d ON u.id = d.user_id';
+            conditions.push('d.programme = ?');
             params.push(programme);
         }
         if (graduation_year && graduation_year !== 'all') {
-            conditions.push('graduation_year = ?');
+            if (!query.includes('JOIN degrees')) query += ' JOIN degrees d ON u.id = d.user_id';
+            conditions.push('d.graduation_year = ?');
             params.push(parseInt(graduation_year));
         }
 
-        const where = 'WHERE ' + conditions.join(' AND ');
+        query += ' WHERE ' + conditions.join(' AND ');
+        query += ' GROUP BY c.certification_name, c.issuing_organization';
+        query += ' ORDER BY count DESC LIMIT 10';
 
-        const [rows] = await pool.execute(
-            `SELECT certifications FROM alumni ${where}`, params
-        );
+        const [rows] = await pool.execute(query, params);
 
-        const certCount = {};
-        rows.forEach(row => {
-            try {
-                const certs = JSON.parse(row.certifications);
-                certs.forEach(cert => {
-                    certCount[cert] = (certCount[cert] || 0) + 1;
-                });
-            } catch (e) {}
-        });
-
-        const sorted = Object.entries(certCount)
-            .sort((a, b) => b[1] - a[1])
-            .slice(0, 10)
-            .map(([cert, count]) => ({ cert, count }));
-
-        return res.json({ success: true, data: sorted });
+        return res.json({ success: true, data: rows });
 
     } catch (error) {
         console.error('Certifications error:', error);
         return res.status(500).json({ success: false, message: 'Failed to fetch certifications' });
+    }
+}
+
+/**
+ * GET /api/analytics/courses
+ * Uses CW1 professional_courses - what alumni self-learned
+ */
+async function getCourses(req, res) {
+    try {
+        const [rows] = await pool.execute(
+            `SELECT pc.course_name, pc.provider,
+                    COUNT(*) as count
+             FROM professional_courses pc
+             JOIN users u ON pc.user_id = u.id
+             WHERE u.is_active = 1
+             GROUP BY pc.course_name, pc.provider
+             ORDER BY count DESC
+             LIMIT 10`
+        );
+
+        return res.json({ success: true, data: rows });
+
+    } catch (error) {
+        console.error('Courses error:', error);
+        return res.status(500).json({ success: false, message: 'Failed to fetch courses' });
     }
 }
 
@@ -348,5 +417,6 @@ module.exports = {
     getTopJobTitles,
     getGeographic,
     getGraduationTrends,
-    getCertifications
+    getCertifications,
+    getCourses
 };

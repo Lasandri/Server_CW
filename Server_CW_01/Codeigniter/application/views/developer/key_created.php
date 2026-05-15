@@ -10,7 +10,7 @@
 <div class="container">
     <div class="card">
         <div class="card-header">
-            <h2>✅ API Key Generated Successfully!</h2>
+            <h2> API Key Generated Successfully!</h2>
         </div>
         <div class="card-body">
 

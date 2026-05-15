@@ -160,4 +160,6 @@ $route['developer/revoke']             = 'developer/revoke';
 $route['developer/revoke_token']       = 'developer/revoke_token';
 $route['developer/reactivate/(:num)']  = 'developer/reactivate/$1';
 $route['developer/delete/(:num)']      = 'developer/delete_key/$1';
+$route['developer/reactivate_key/(:num)'] = 'developer/reactivate/$1';
+$route['developer/delete_key/(:num)']     = 'developer/delete_key/$1';
 
