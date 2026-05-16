@@ -91,24 +91,95 @@ function verifyApiKey(requiredPermission) {
             const apiKey = authHeader.split(' ')[1];
 
             // Look up API key in database
-            const [rows] = await pool.execute(
-                `SELECT * FROM api_keys 
-                 WHERE api_key = ? AND is_active = 1`,
-                [apiKey]
-            );
+            // const [rows] = await pool.execute(
+            //     `SELECT * FROM api_keys 
+            //      WHERE api_key = ? AND is_active = 1`,
+            //     [apiKey]
+            // );
 
-            if (rows.length === 0) {
-                // Log failed attempt
-                console.warn(`⚠️  Invalid API key attempt: ${apiKey.substring(0, 10)}...`);
-                return res.status(401).json({
-                    success: false,
-                    message: 'Invalid or inactive API key.',
-                    code: 'INVALID_API_KEY'
-                });
+            // if (rows.length === 0) {
+            //     // Log failed attempt
+            //     console.warn(`⚠️  Invalid API key attempt: ${apiKey.substring(0, 10)}...`);
+            //     return res.status(401).json({
+            //         success: false,
+            //         message: 'Invalid or inactive API key.',
+            //         code: 'INVALID_API_KEY'
+            //     });
+        //     }
+
+        //     const keyData     = rows[0];
+        //    // const permissions = JSON.parse(keyData.permissions);
+
+        //    // Safe JSON parse - handle null/undefined/plain string
+        //     let permissions = [];
+        //     try {
+        //         if (keyData.permissions) {
+        //             // If already array, use it
+        //             if (Array.isArray(keyData.permissions)) {
+        //                 permissions = keyData.permissions;
+        //             } else {
+        //                 permissions = JSON.parse(keyData.permissions);
+        //             }
+        //         }
+        //     } catch (e) {
+        //         // If permissions is plain string like "read:alumni,read:analytics"
+        //         permissions = keyData.permissions 
+        //             ? keyData.permissions.split(',').map(p => p.trim())
+        //             : [];
+        //     }
+
+
+        const [rows] = await pool.execute(
+            `SELECT * FROM api_keys 
+            WHERE api_key = ? AND is_active = 1 AND is_revoked = 0`,
+            [apiKey]
+        );
+
+        if (rows.length === 0) {
+            console.warn(`⚠️  Invalid API key attempt: ${apiKey.substring(0, 10)}...`);
+            // Log to auth logs table
+            try {
+                await pool.execute(
+                    `INSERT INTO api_key_auth_logs 
+                    (api_key_id, event_type, ip_address, user_agent, details)
+                    VALUES (0, 'login_failed', ?, ?, ?)`,
+                    [
+                        (req.ip || '127.0.0.1').substring(0, 45),
+                        (req.headers['user-agent'] || '').substring(0, 500),
+                        `Invalid key attempt: ${apiKey.substring(0, 10)}...`
+                    ]
+                );
+            } catch(e) { /* silent */ }
+
+            return res.status(401).json({
+                success: false,
+                message: 'Invalid or inactive API key.',
+                code: 'INVALID_API_KEY'
+            });
+        }
+
+        const keyData = rows[0];
+
+        // ── FIX: CW1 uses 'scopes' column not 'permissions' ──────────────
+        // scopes is a plain string like "read:alumni,read:analytics"
+        let permissions = [];
+        try {
+            if (keyData.permissions) {
+                // Try JSON parse first
+                if (Array.isArray(keyData.permissions)) {
+                    permissions = keyData.permissions;
+                } else {
+                    permissions = JSON.parse(keyData.permissions);
+                }
+            } else if (keyData.scopes) {
+                // CW1 format: comma-separated string
+                permissions = keyData.scopes.split(',').map(p => p.trim());
             }
-
-            const keyData     = rows[0];
-            const permissions = JSON.parse(keyData.permissions);
+        } catch (e) {
+            // Fallback: treat as comma-separated
+            const scopeStr = keyData.permissions || keyData.scopes || '';
+            permissions = scopeStr.split(',').map(p => p.trim()).filter(p => p);
+        }
 
             // Check if key has expired
             if (keyData.expires_at && new Date(keyData.expires_at) < new Date()) {
@@ -157,13 +228,39 @@ function verifyApiKey(requiredPermission) {
             }
 
             // ── Update usage stats ───────────────────────────────────────────
+            // await pool.execute(
+            //     `UPDATE api_keys 
+            //      SET usage_count = usage_count + 1, 
+            //          last_used_at = NOW() 
+            //      WHERE id = ?`,
+            //     [keyData.id]
+            // );
+
+            // ── Update usage stats ───────────────────────────────────────────
             await pool.execute(
                 `UPDATE api_keys 
-                 SET usage_count = usage_count + 1, 
-                     last_used_at = NOW() 
-                 WHERE id = ?`,
+                SET total_requests = total_requests + 1, 
+                    last_used_at = NOW() 
+                WHERE id = ?`,
                 [keyData.id]
             );
+
+            // Log successful auth
+            try {
+                await pool.execute(
+                    `INSERT INTO api_key_auth_logs 
+                    (api_key_id, event_type, ip_address, user_agent, details)
+                    VALUES (?, 'login', ?, ?, ?)` ,
+                    [
+                        keyData.id,
+                        (req.ip || '127.0.0.1').substring(0, 45),
+                        (req.headers['user-agent'] || '').substring(0, 500),
+                        `Accessed: ${req.path}`
+                    ]
+                );
+            } catch(e) { /* silent */ }
+
+
 
             // ── Log the successful API access ────────────────────────────────
             await logApiUsage(
@@ -196,24 +293,49 @@ function verifyApiKey(requiredPermission) {
 /**
  * Log API usage to database
  */
+// async function logApiUsage(apiKeyId, endpoint, method, status, ip, userAgent) {
+//     try {
+//         await pool.execute(
+//             `INSERT INTO api_key_auth_logs 
+//              (api_key_id, endpoint, method, response_status, ip_address, user_agent, 
+//               accessed_at)
+//              VALUES (?, ?, ?, ?, ?, ?, NOW())`,
+//             [
+//                 apiKeyId,
+//                 endpoint.substring(0, 255),
+//                 method,
+//                 status,
+//                 (ip || '').substring(0, 45),
+//                 (userAgent || '').substring(0, 255)
+//             ]
+//         );
+//     } catch (error) {
+//         console.error('Log API usage error:', error.message);
+//     }
+// }
+
 async function logApiUsage(apiKeyId, endpoint, method, status, ip, userAgent) {
     try {
+        // Use api_usage_logs table with correct column names
         await pool.execute(
             `INSERT INTO api_usage_logs 
-             (api_key_id, endpoint, method, response_status, ip_address, user_agent)
-             VALUES (?, ?, ?, ?, ?, ?)`,
+             (api_key_id, endpoint, method, ip_address, user_agent, 
+              response_code, response_status, requested_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, NOW())`,
             [
                 apiKeyId,
-                endpoint.substring(0, 255),
-                method,
-                status,
-                (ip || '').substring(0, 45),
-                (userAgent || '').substring(0, 255)
+                (endpoint || '/unknown').substring(0, 500),
+                method || 'GET',
+                (ip || '127.0.0.1').substring(0, 45),
+                (userAgent || '').substring(0, 500),
+                status || 200,
+                status || 200
             ]
         );
     } catch (error) {
-        console.error('Log API usage error:', error.message);
+        // Silently fail - logging never breaks API
     }
 }
+
 
 module.exports = { verifyToken, verifyApiKey, logApiUsage };

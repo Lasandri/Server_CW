@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Dashboard extends CI_Controller {
 
     private $api_base_url;
-    private $api_key = 'dashboard_key_alumni_2025_secure';
+    private $api_key = 'ab9c25c19f594a2be074d7c5d1cd6304';
 
     public function __construct() {
         parent::__construct();
@@ -23,56 +23,94 @@ class Dashboard extends CI_Controller {
     /**
      * Make GET request to Node API
      */
+    // private function api_get($endpoint, $params = array()) {
+    //     $url = $this->api_base_url . $endpoint;
+
+    //     if (!empty($params)) {
+    //         $url .= '?' . http_build_query($params);
+    //     }
+
+    //     $ch = curl_init($url);
+    //     curl_setopt_array($ch, array(
+    //         CURLOPT_RETURNTRANSFER => true,
+    //         CURLOPT_HTTPHEADER     => array(
+    //             'Authorization: Bearer ' . $this->api_key,
+    //             'Content-Type: application/json'
+    //         ),
+    //         CURLOPT_TIMEOUT        => 30,
+    //         CURLOPT_SSL_VERIFYPEER => false
+    //     ));
+
+    //     $response = curl_exec($ch);
+    //     curl_close($ch);
+
+    //     return json_decode($response, true);
+    // }
+
+
     private function api_get($endpoint, $params = array()) {
-        $url = $this->api_base_url . $endpoint;
+    $url = $this->api_base_url . $endpoint;
 
-        if (!empty($params)) {
-            $url .= '?' . http_build_query($params);
-        }
-
-        $ch = curl_init($url);
-        curl_setopt_array($ch, array(
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_HTTPHEADER     => array(
-                'Authorization: Bearer ' . $this->api_key,
-                'Content-Type: application/json'
-            ),
-            CURLOPT_TIMEOUT        => 30,
-            CURLOPT_SSL_VERIFYPEER => false
-        ));
-
-        $response = curl_exec($ch);
-        curl_close($ch);
-
-        return json_decode($response, true);
+    if (!empty($params)) {
+        $url .= '?' . http_build_query($params);
     }
+
+    $ch = curl_init();
+    curl_setopt_array($ch, array(
+        CURLOPT_URL            => $url,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 30,
+        CURLOPT_SSL_VERIFYPEER => false,
+        CURLOPT_SSL_VERIFYHOST => false,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
+        CURLOPT_HTTPHEADER     => array(
+            'Authorization: Bearer ' . $this->api_key,
+            'Content-Type: application/json',
+            'Accept: application/json',
+            'Connection: close'
+        )
+    ));
+
+    $response  = curl_exec($ch);
+    $httpCode  = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $curlError = curl_error($ch);
+    curl_close($ch);
+
+    if ($response === false || empty($response)) {
+        return null;
+    }
+
+    return json_decode($response, true);
+}
 
     /**
      * GET /dashboard
      * Main dashboard page
      */
     public function index() {
-        // Get overview stats
-        $overview = $this->api_get('/analytics/overview');
+    $overview = $this->api_get('/analytics/overview');
 
-        $data['user']     = array(
-            'full_name' => $this->session->userdata('full_name'),
-            'email'     => $this->session->userdata('email'),
-            'role'      => $this->session->userdata('role')
-        );
+    $data['user'] = array(
+        'full_name' => $this->session->userdata('full_name'),
+        'email'     => $this->session->userdata('email'),
+        'role'      => $this->session->userdata('role')
+    );
 
-        $data['overview'] = isset($overview['data']) ? $overview['data'] : array(
-            'total_alumni'     => 0,
-            'total_sectors'    => 0,
-            'total_programmes' => 0,
-            'total_years'      => 0
-        );
+    $data['overview'] = isset($overview['data']) ? $overview['data'] : array(
+        'total_alumni'     => 0,
+        'total_sectors'    => 0,
+        'total_programmes' => 0,
+        'total_years'      => 0,
+        'total_certs'      => 0,
+        'total_courses'    => 0
+    );
 
-        $data['active_page'] = 'dashboard';
-        $data['page_title']  = 'Dashboard';
+    $data['active_page'] = 'dashboard';
+    $data['page_title']  = 'Dashboard';
 
-        $this->load->view('dashboard/index', $data);
-    }
+    $this->load->view('dashboard/index', $data);
+}
 
     /**
      * GET /dashboard/graphs

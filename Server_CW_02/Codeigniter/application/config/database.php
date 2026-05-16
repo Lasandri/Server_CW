@@ -35,7 +35,7 @@ $db['default'] = array(
     'hostname' => 'localhost',
     'username' => 'root',       // your MySQL username
     'password' => '',           // your MySQL password (empty for XAMPP default)
-    'database' => 'alumni_dashboard',
+    'database' => 'alumni_platform',
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,
@@ -53,6 +53,3 @@ $db['default'] = array(
 );
 
 
-$db['cw1'] = [
-   'database' => 'alumni_platform'
-];

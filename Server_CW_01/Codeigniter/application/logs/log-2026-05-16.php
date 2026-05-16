@@ -1,0 +1,29 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+DEBUG - 2026-05-16 06:51:15 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:15 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:15 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:15 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:15 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:15 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:20 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:20 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:20 --> Email class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:20 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:20 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:20 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:23 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:51:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:07 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:07 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:19 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:19 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2026-05-16 06:52:19 --> Session class already loaded. Second attempt ignored.
